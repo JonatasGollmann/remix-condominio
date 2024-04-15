@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import bgPhoto from "/bgPhoto.jpg";
-import icon from "/DwellIcon.png";
+import icon from "/Icon.png";
 import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
@@ -32,8 +32,7 @@ export default function Index() {
           <p className=" text-slate-500">Dwell é uma plataforma de monitoramento de condomínios.</p>
         </div>
         <div className="flex">
-          <Link to={"/new"} className=" bg-custom-y2 text-white hover:bg-custom-y1 font-light py-2 px-5 rounded-md m-2 drop-shadow-lg">Cadastrar</Link>
-          <Link to={"/login"} className=" bg-custom-b2 text-white hover:bg-custom-b1 font-light py-2 px-5 rounded-md m-2 drop-shadow-lg">Entrar</Link>
+          <Link to={"/dashboard"} className=" bg-custom-b2 text-white hover:bg-custom-b1 font-light py-2 px-5 rounded-md m-2 drop-shadow-lg">Ver Dashboard</Link>
         </div>
       </div>
     </div>
